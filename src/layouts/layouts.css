@@ -1,0 +1,41 @@
+
+
+#app {
+    font-family: 'Dosis', sans-serif;
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    transition: opacity 1s;
+    height: 100%;
+    padding: 5% 10%;
+    margin-bottom: 5%;
+}
+
+.sectionHeader {
+    flex: 1;
+    color:#1B9CFC;
+    padding-bottom: 10px;
+}
+
+.sectionDetails {
+    flex: 5;
+    text-align: left;
+    line-height: 1.6;
+}
+
+@media (min-width: 1281px) {
+    .section {
+        flex-direction: row;
+        padding: 5% 13% 0 10%;
+    }
+    .sectionHeader {
+        text-align: right;
+        padding-bottom: 0px;
+      }
+    .sectionDetails {
+        margin: 0 0 0 50px;
+        padding-top: 0px;
+    }
+}
