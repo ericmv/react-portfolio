@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 
 import ResumeButton from './ResumeButton/ResumeButton'
@@ -6,7 +6,6 @@ import ResumeButton from './ResumeButton/ResumeButton'
 
 // Change to fit mobile-first
 const IntroText = styled.div`
-    color: #485460;
     line-height: 1.4;
     font-size: 24px;
 `
