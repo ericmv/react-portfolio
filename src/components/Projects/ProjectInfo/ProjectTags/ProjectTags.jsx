@@ -19,7 +19,15 @@ const TagList = styled.div`
 
 const ProjectTags = (props) => {
     return (
-
+        <TagList>
+            {
+                props.tags.map((tag) => {
+                    return (
+                        <Tag>{tag}</Tag>
+                    )
+                })
+            }
+        </TagList>
     )
 }
 

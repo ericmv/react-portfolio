@@ -57,3 +57,30 @@ export const skillsDetails = [
         skills: ['Linux', 'Agile', 'Scrum', 'macOS', 'Windows']
     }
 ]
+
+export const projectDetails = [
+    {
+        name: "The Fridge App",
+        description: "React Native App that lets users log and keep track of items in a shared fridge. Users can add and remove items, sort through content, request items from other users, and will be notified when their food is expiring. Incorporated authentication, user sessions, and push notifications.",
+        tags: ['MongoDB', 'Express', 'React Native', 'Node', 'Expo'],
+        image: require('../images/fridge.jpg')
+    },
+    {
+        name: "Nibble",
+        description: "React web app that randomly chooses a location for the user to eat at. Allows users to pick different categories of food they are craving and will randomly decide a place to eat according to those categories. Backend uses Express to make Yelp API calls and return results to the client.",
+        tags: ['React', 'Express', 'Yelp API', 'Flexbox'],
+        image: require('../images/nibble.jpg')
+    },
+    {
+        name: "Catchphrase",
+        description: "Mobile version of popular game catchphrase seen at many stores like Target. This was my first Angular project which gave me a good understanding of how Angular works.",
+        tags: ['Angular 6', 'HTML', 'CSS'],
+        image: require('../images/catchphrase.png')
+    },
+    {
+        name: "DayQuest",
+        description: "Android to-do list application for autistic children that helps them focus and plan ahead. While researching and interviewing behavioral interventionists, we found that autistic children learn best with incentives. DayQuest does just that by adding prizes and points to the to do list, which can be redeemed by taking the device to the caretaker. Created for 2016 Autism App Jam.",
+        tags: ['Java', 'Android Studios'],
+        image: require('../images/dayquest.jpg')
+    }
+]
