@@ -5,13 +5,23 @@ import styled from 'styled-components';
 const Image = styled.img`
     width: 100%;
     height: 100%;
+    padding-bottom: 25px;
+`
+
+const ImageWrapper = styled.div`
+    display: flex;
+    flex: 3;
+    align-self: center;
 `
 
 const ProjectImage = (props) => {
     
     return (
-        <Image src={props.source}>
-        </Image>
+        <ImageWrapper>
+            <Image src={props.source}>
+            </Image>
+        </ImageWrapper>
+        
     )
 }
 

@@ -8,9 +8,22 @@ import ResumeButton from './ResumeButton/ResumeButton'
 const IntroText = styled.div`
     line-height: 1.4;
     font-size: 24px;
-`
-const Spacer = styled.br`
-    line-height: 2.5;
+
+    @media (min-width: 320px)  {
+        font-size: 28px;
+    }
+    @media (min-width: 480px)  {
+        font-size: 31px;
+    }
+    @media (min-width: 635px)  {
+        font-size: 35px;
+    }
+    @media (min-width: 768px)  {
+        font-size: 36px;
+    }
+    @media (min-width: 1024px) {
+        padding-left: 15%;
+    }
 `
 
 const IntroContainer = styled.div`
@@ -19,6 +32,17 @@ const IntroContainer = styled.div`
     justify-content: space-around;
     padding: 0% 7%;
     height: 100vh;
+
+    @media (min-width: 635px)  {
+        width: 500px;
+    }
+    @media (min-width: 768px)  {
+        width: 600px;
+    }
+    @media (min-width: 1025px)  {
+        
+        width: 700px;
+    }
 `
 
 const Intro = () => {

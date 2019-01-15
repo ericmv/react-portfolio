@@ -9,12 +9,15 @@ const Tag = styled.div`
     color: white;
     font-size: 12px;
     font-weight: 700;
+    margin-right: 5px;
+    margin-bottom: 5px;
 `
 
 const TagList = styled.div`
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-bottom: 15px;
 `
 
 const ProjectTags = (props) => {
@@ -23,7 +26,7 @@ const ProjectTags = (props) => {
             {
                 props.tags.map((tag) => {
                     return (
-                        <Tag>{tag}</Tag>
+                        <Tag key={tag}>{tag}</Tag>
                     )
                 })
             }

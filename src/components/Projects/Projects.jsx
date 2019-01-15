@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import { projectDetails } from '../../data/details';
 import ProjectInfo from './ProjectInfo/Project';
 
+import { SectionContainer, SectionHeader, SectionDetails } from '../../styles/styles';
+
 const ProjectList = styled.div`
 `
 
@@ -12,16 +14,20 @@ const Projects = () => {
     const projects = projectDetails;
     
     return (
-        <ProjectList>
-            {
-                projects.map((project) => {
-                    return (
-                        <Project {...project}/>
-                    )
-                })
-            }
-        </ProjectList>
-        
+        <SectionContainer>
+            <SectionHeader>Projects</SectionHeader>
+            <SectionDetails>
+                <ProjectList>
+                {
+                    projects.map((project) => {
+                        return (
+                            <ProjectInfo index={project.index} {...project}/>
+                        )
+                    })
+                }
+                </ProjectList>
+            </SectionDetails>
+        </SectionContainer>
     )
 }
 

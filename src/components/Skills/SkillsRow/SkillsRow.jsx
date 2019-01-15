@@ -7,7 +7,8 @@ const Row = styled.div`
     flex: 1;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    /* border: 1px dotted; */
 `
 
 const SkillsRow = (props) => { 
@@ -15,7 +16,7 @@ const SkillsRow = (props) => {
         <Row>
             {props.lists.map((item) => {
                 return (
-                    <SkillsColumn category={item.category} skills={item.skills}/>
+                    <SkillsColumn key={item.index} category={item.category} skills={item.skills}/>
                 )
             })}
         </Row>

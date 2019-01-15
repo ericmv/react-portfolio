@@ -3,18 +3,21 @@ import React, { Component } from 'react';
 import Intro from './components/Intro/Intro';
 import Experience from './components/Experience';
 import Skills from './components/Skills/Skills';
+import Projects from './components/Projects/Projects';
+import Footer from './components/Footer/Footer';
 
-import './layouts/layouts.css'
+import './styles/layouts.css'
 
 class App extends Component {
 
   render() {
-    const skills = ['Python', 'Java', 'C++', 'Javascript', 'HTML']
     return (
       <div id="app">
         <Intro />
         <Experience />
         <Skills />
+        <Projects /> 
+        <Footer />       
       </div>
     );
   }

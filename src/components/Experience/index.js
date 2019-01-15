@@ -1,18 +1,19 @@
 import React from 'react';
-import styled from 'styled-components';
+
+import { SectionContainer, SectionHeader, SectionDetails } from '../../styles/styles';
 
 import {experienceDetails} from '../../data/details'
 import ExperienceList from './ExperienceList/ExperienceList'
 
 const Experience = () => {
     return (
-        <div className="section">
-            <div className="sectionHeader">Experience</div>
-            <div className="sectionDetails">
+        <SectionContainer>
+            <SectionHeader>Experience</SectionHeader>
+            <SectionDetails>
                 <ExperienceList details={experienceDetails}/>
-            </div>
+            </SectionDetails>
         
-        </div>
+        </SectionContainer>
     )
 }
 

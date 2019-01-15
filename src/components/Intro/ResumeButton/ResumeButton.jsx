@@ -17,13 +17,31 @@ const Button = styled.a`
     outline: none;
     display: flex;
     align-items: center;
+
+    &:hover {
+        background-color: #778beb;
+        color: white;
+        cursor: pointer;
+        text-decoration: none;
+    }
 ` 
+
+const ButtonWrapper = styled.div`
+    @media (min-width: 1024px)  {
+        padding-left: 15%;
+    }
+
+    
+`
 
 const ResumeButton = () => {
     return (
-        <Button>
-            Download Resume
-        </Button>
+        <ButtonWrapper>
+            <Button>
+                Download Resume
+            </Button>
+        </ButtonWrapper>
+        
     )
 }
 

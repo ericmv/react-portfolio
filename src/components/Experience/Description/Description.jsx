@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 
 const Description = styled.div`
-    padding: 5% 0 5% 0;
+    padding: 0% 0 5% 0;
     line-height: 1.5;
 `
 
