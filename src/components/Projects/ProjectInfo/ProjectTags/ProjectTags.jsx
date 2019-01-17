@@ -24,11 +24,7 @@ const ProjectTags = (props) => {
     return (
         <TagList>
             {
-                props.tags.map((tag) => {
-                    return (
-                        <Tag key={tag}>{tag}</Tag>
-                    )
-                })
+                props.tags.map(tag => <Tag key={tag}>{tag}</Tag>)
             }
         </TagList>
     )

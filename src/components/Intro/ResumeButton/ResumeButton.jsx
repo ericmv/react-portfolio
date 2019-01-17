@@ -26,21 +26,13 @@ const Button = styled.a`
     }
 ` 
 
-const ButtonWrapper = styled.div`
-    @media (min-width: 1024px)  {
-        padding-left: 15%;
-    }
 
-    
-`
 
 const ResumeButton = () => {
     return (
-        <ButtonWrapper>
-            <Button>
-                Download Resume
-            </Button>
-        </ButtonWrapper>
+        <Button>
+            Download Resume
+        </Button>
         
     )
 }

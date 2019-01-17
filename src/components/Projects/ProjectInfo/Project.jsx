@@ -49,6 +49,13 @@ const ProjectInfo = (props) => {
     const projectLink = props.link
     const imageUrl = props.image;
 
+// const {
+//     name,
+//     description,
+//     tags,
+//     link
+// } = props;
+
     return (
         <Project key={projectName}>
             <ProjectImage source={imageUrl} />

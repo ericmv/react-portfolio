@@ -9,9 +9,6 @@ const IntroText = styled.div`
     line-height: 1.4;
     font-size: 24px;
 
-    @media (min-width: 320px)  {
-        font-size: 28px;
-    }
     @media (min-width: 480px)  {
         font-size: 31px;
     }
@@ -45,6 +42,13 @@ const IntroContainer = styled.div`
     }
 `
 
+const ButtonWrapper = styled.div`
+    @media (min-width: 1024px)  {
+        padding-left: 15%;
+    }
+    
+`
+
 const Intro = () => {
     return (
         <IntroContainer>
@@ -54,7 +58,9 @@ const Intro = () => {
             <IntroText>
                 I'm Eric Vu, a forward-thinking software engineer who is passionate about creating complete and efficient products.
             </IntroText>
-            <ResumeButton />
+            <ButtonWrapper>
+                <ResumeButton />
+            </ButtonWrapper>
         </IntroContainer>
         
     )
